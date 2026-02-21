@@ -41,7 +41,7 @@ export const initSocket = server => {
             };
             if (receiver) {
                 io.to(receiver.socketId).emit('receiveMessage', message);
-                console.log('receiver', message)
+                // console.log('receiver', message)
             };
         });
         socket.on("disconnect", () => {
